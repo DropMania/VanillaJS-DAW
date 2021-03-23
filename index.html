@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>musicMaker</title>
+        <link id="cssFile" rel="stylesheet" type="text/css" href="style.css"/>   
+    </head>
+    <body onload="createMatrix(),OscillatorDisplay()" oncontextmenu="return false;">
+        <button onclick="darkMode()">Dark</button>
+        <div id="headSection">
+            <div class="topEls">
+                <div class="topEl"><button onclick="NewSong()">New Song</button></div>
+                <div class="topEl">Main Volume:<br><input type="range" min="0" max="100" value="100" oninput="mainVol(this)" id="mainVol"></div>
+                <div class="topEl"><canvas id='OscillatorDisplay' width="200" height="50"></canvas></div>
+            </div>
+            <div class="config">
+                <div class="config_element">BPM: <input type="number" id="bpmField"></div>
+                <div class="config_element">Octaves: <input type="number" id="octField"></div>
+                <div class="config_element">Start Octave: <input type="number" id="soctField"></div>
+                <div class="config_element">Length: <input type="number" id="lenField"></div>
+                <div class="config_element">Wave Form: 
+                    <select id="waveField">
+                        <option value="sine">sine</option>
+                        <option value="square">square</option>
+                        <option value="triangle">triangle</option>
+                        <option value="sawtooth">sawtooth</option>
+                    </select>
+                </div>
+                <div class="config_element"><button onclick="setConfig(this.parentNode.parentNode.children)">Apply</button></div>
+            </div>
+            <div class="controls">
+                <button onclick="play()">start</button>
+                <button onclick="stop()">stop</button>
+                <button onclick="pause()">pause</button>
+            </div>
+            <div class="saveForm">        
+                <input type="text" id="saveName" placeholder="Name...">
+                <button><a id="save" onclick="save()" download="save">save File</a></button>
+                <input id="load" type="file" >
+                <button onclick="saveURL()">save URL</button>
+            </div>
+            <div class="controlMode">        
+                <button onclick="changeMode('draw',this)" style="color:#ccc;background-color: rgb(85, 85, 255)">draw</button>
+                <button onclick="changeMode('select',this)">select</button>
+            </div>
+            
+        </div>
+        <div id="matrix"></div>
+    </body>
+    <script src="setup.js"></script>
+    <script src="keyDraw.js"></script>
+    <script src="drumDraw.js"></script>
+    <script src="selectMode.js"></script>
+    <script src="audioGenerating.js"></script>
+</html>
