@@ -20,10 +20,10 @@
 -   Save and Load
     -   You can save your Project in 2 ways
         -   Save it as a txt File and load it again
-        -   Save it as URL to sen the link with Project to your Friends (could create veeery long URLs^^)
+        -   Save it as URL to send the link with the Project to your Friends (could create veeery long URLs^^)
 
 ## WIP
 
 -   Select Mode
-    -   You can select whole Parts of the Piano Roll and copy or delete them
+    -   You can select whole parts of the Piano Roll and copy or delete them
     -   Styling... of course
