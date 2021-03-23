@@ -2,7 +2,7 @@
 
 ### This is a basic Digital Audio Workstion built in vanilla JavaScript.
 
-### https://dropmania.de/musicmaker
+### [Open DAW](https://dropmania.de/musicmaker)
 
 ## Features:
 
