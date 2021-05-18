@@ -26,4 +26,4 @@
 
 -   Select Mode
     -   You can select whole parts of the Piano Roll and copy or delete them
-    -   Styling... of course
+-   Styling... of course
